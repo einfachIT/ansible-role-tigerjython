@@ -8,5 +8,5 @@
 
 - name: create desktop Entry
   template:
-    src: tigerjython.desktop
+    src: tigerjython.Desktop
     dest: /usr/share/raspi-ui-overrides/applications/
