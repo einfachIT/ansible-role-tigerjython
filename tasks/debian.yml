@@ -2,7 +2,7 @@
 - name: download tigerjython logo
   get_url:
     url: http://www.tigerjython.ch/lernumgebung/bilder/tjlogo.png
-    dest: '/usr/share/pixmaps/'
+    dest: '/usr/share/pixmaps/tjlogo.png'
     owner: '{{ installation_os_user }}'
     group: '{{ installation_os_group }}'
 
