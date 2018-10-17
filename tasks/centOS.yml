@@ -1,0 +1,3 @@
+- name: Install OS Packages
+  yum:
+    name: 'mosquitto'
