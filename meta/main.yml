@@ -3,7 +3,7 @@ galaxy_info:
   author: Bastian Bukatz
   description: simple role to setup mosquitto mqtt broker
 
-  license: license (GPLv2, CC-BY, etc)
+  license: GNU GPLv3
 
   min_ansible_version: 2.4
 
