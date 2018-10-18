@@ -1,6 +1,6 @@
 # Ansible Role: tigerjython
 
-[![Build Status](https://travis-ci.com/Bassinator/ansible-role-simplehttp.svg?branch=master)](https://travis-ci.com/Bassinator/ansible-role-simplehttp)
+[![Build Status](https://travis-ci.com/Bassinator/ansible-role-nodered.svg?branch=master)](https://travis-ci.com/Bassinator/ansible-role-nodered)
 
 Install tigerjython into user home directory
 
