@@ -2,22 +2,18 @@
 
 - name: create tigerjython directory
   file:
-    path: '/home/{{installation_os_user}}/tigerjython'
+    path: '/opt/tigerjython'
     state: directory
-    owner: '{{ installation_os_user }}'
-    group: '{{ installation_os_group }}'
 
 - name: download tigerjython2
   get_url:
     url: http://www.tjgroup.ch/download/tigerjython2.jar
-    dest: '/home/{{ installation_os_user }}/tigerjython/tigerjython2.jar'
-    owner: '{{ installation_os_user }}'
-    group: '{{ installation_os_group }}'
+    dest: '/opt/tigerjython/tigerjython2.jar'
 
 - name: download tigerjython4kids docs
   get_url:
     url: 'http://www.tigerjython4kids.ch/download/{{ item }}'
-    dest: '/home/{{ installation_os_user }}/tigerjython/{{ item }}'
+    dest: '/opt/tigerjython/{{ item }}'
   with_items: '{{ docs }}'
 
 - include_tasks: debian.yml
