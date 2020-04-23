@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include bassinator.tigerjython"
+      include_role:
+        name: "bassinator.tigerjython"
