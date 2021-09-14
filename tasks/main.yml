@@ -1,5 +1,9 @@
 ---
 
+- name: install java
+  apt:
+    name: default-jdk
+    
 - name: create tigerjython directory
   file:
     path: '/opt/tigerjython'
@@ -7,7 +11,7 @@
 
 - name: download tigerjython2
   get_url:
-    url: http://www.tjgroup.ch/download/tigerjython2.jar
+    url: https://www.tjgroup.ch/download/tigerjython2.jar
     dest: '/opt/tigerjython/tigerjython2.jar'
 
 - include_tasks: debian.yml
