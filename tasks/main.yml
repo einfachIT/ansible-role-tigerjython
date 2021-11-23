@@ -2,7 +2,9 @@
 
 - name: install java
   apt:
-    name: default-jdk
+    name:
+      # - default-jdk
+      - openjdk-11-jdk
 
 - name: create tigerjython directory
   file:

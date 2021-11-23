@@ -6,18 +6,14 @@ env:
   global:
     - ROLE_NAME: tigerjython
   matrix:
-    - MOLECULE_DISTRO: debian9
     - MOLECULE_DISTRO: debian10
-
-install:
-  - pip install molecule flake8 testinfra docker molecule-docker
-  - pip install yamllint ansible-lint
 
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
   - cd ../
   - mv ansible-role-$ROLE_NAME bassinator.$ROLE_NAME
   - cd bassinator.$ROLE_NAME
+  - source source.me
 
 script:
   # Run tests.

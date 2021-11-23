@@ -2,7 +2,7 @@
 
 - name: download tigerjython logo
   copy:
-    url: logo.png
+    src: logo.png
     dest: '/usr/share/pixmaps/tjlogo.png'
     mode: '0644'
 
