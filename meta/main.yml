@@ -1,7 +1,7 @@
 ---
-
 galaxy_info:
   role_name: tigerjython
+  namespace: bassinator
   author: Bastian Bukatz
   description: simple role to setup mosquitto mqtt broker
 

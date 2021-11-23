@@ -3,16 +3,18 @@
 - name: install java
   apt:
     name: default-jdk
-    
+
 - name: create tigerjython directory
   file:
     path: '/opt/tigerjython'
     state: directory
+    mode: '0755'
 
 - name: download tigerjython2
   get_url:
     url: https://www.tjgroup.ch/download/tigerjython2.jar
     dest: '/opt/tigerjython/tigerjython2.jar'
+    mode: '0644'
 
 - include_tasks: debian.yml
   when: ansible_os_family == "Debian"
