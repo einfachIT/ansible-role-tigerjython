@@ -3,6 +3,6 @@
   hosts: all
   tasks:
 
-  - name: install java
+  - name: Install java
     ansible.builtin.apt:
       update_cache: true
